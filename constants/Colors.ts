@@ -6,7 +6,21 @@
 const tintColorLight = '#0a7ea4';
 const tintColorDark = '#fff';
 
-export const Colors = {
+interface ThemeColors {
+  text: string;
+  background: string;
+  tint: string;
+  icon: string;
+  tabIconDefault: string;
+  tabIconSelected: string;
+};
+
+interface ColorsType {
+  light: ThemeColors;
+  dark: ThemeColors;
+};
+
+export const Colors: ColorsType = {
   light: {
     text: '#11181C',
     background: '#fff',
